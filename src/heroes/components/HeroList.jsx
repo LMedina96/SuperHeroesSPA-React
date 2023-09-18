@@ -4,7 +4,7 @@ import HeroCard from "./HeroCard"
 
 const HeroList = ({publisher}) => {
 
-    const heroes = useMemo(() => getHeroesByPublisher(publisher), publisher) 
+    const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]) 
 
   return (
     <>
